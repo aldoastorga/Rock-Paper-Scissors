@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Paper Rock Scissors</title>
+<link rel="stylesheet" href ="game.css">
+	
+<h1 id="name_input"> User name </h1>
+
+<script type="text/javascript">
+		var name = window.prompt("Enter Alias");
+		document.getElementById("name_input").innerHTML = name+",Welcome To Paper Rock Scissors!!!!";
+
+
+
+</script>
+	
+</head>
+<style>
+	#grad1 {
+  height: 1000px;
+  background-color: red;
+  background-image: linear-gradient(to right, white , yellow);
+}
+
+</style>
+
+<body>
+
+	<div id="grad1">
+
+	<script language="JavaScript" type="text/javascript" src="game.js"> </script>
+
+<table style = "width:100">
+	<tr>
+		<td> User Selection: </td>
+			<td></td>			
+		<td> AI </td>
+	</tr>
+
+		<tr>
+			<td>
+		<input type="radio" onclick="userChoose();"
+		id="paper" value="paper" name="option">
+  		<label for="paper">Paper</label>
+  		<br>
+
+
+
+  <input type="radio" onclick="userChoose();"
+  id="Rock" value="Rock" name="option">
+  <label for="Rock">Rock</label>
+  <br>
+  			<input type="radio" onclick="userChoose();"
+  			id="Scissors" value="Scissors" name="option">
+  			<label for="Scissors">Scissors</label>
+  			<br>
+
+  			</td>
+
+			<td>
+			 <input type="button" value= "Summon!" onclick="go()" id ="play">
+			</td>
+
+			<td> 
+			<div id="computerChoose"> </div> 
+		</td>	
+		</tr>
+
+		<tr>
+			<td> Selected:</td>
+
+			<td colspan="2"> <div id = "display"></div> 
+			</td>
+		</tr>
+
+		<tr>
+			<td> Random:</td>
+			<td colspan="2"> <div id="computerChoose2"> </div> </td>	
+		</tr>
+
+	
+	</table>
+
+	<p>
+	 Times Played: <span id = "displayCount"> 0 </span>
+	</p>
+
+	<p>
+
+	Paper: <span id="countPaper"></span> Rock: <span id="countRock"></span> Scissors: <span id="countScissors"></span>
+
+	</p>
+
+	<b id = "resultDisplay2"> </b>
+</div>
+</body>
+
+</html>
